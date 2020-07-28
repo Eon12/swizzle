@@ -1,0 +1,45 @@
+:root {
+    --swizzle-primary: #c61a65;
+    --swizzle-secondary: #f7768a;
+
+    --bg-primary: #1c1d31;
+    --bg-secondary: #333446;
+    --bg-tertiary: #111224;
+    --bg-quaternary: #586375;
+
+    --content-primary: #fff;
+    --content-secondary: #dfdfdf;
+
+    --contrast-primary: rgb(0, 0, 0);
+    --contrast-secondary: rgb(109, 109, 109);
+    --contrast-tertiary: rgb(49, 49, 49);
+}
+
+::placeholder, input {
+    color: var(--content-primary) !important;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--content-primary);
+    font-family: 'Baloo Da 2';
+    height: 100%;
+}
+
+.card {
+    background-color: var(--bg-tertiary);
+    text-align: left;
+}
+
+button {
+    outline: none !important;
+}
+
+.block {
+    width: 100%;
+    display: block;
+}
+
+.hidden {
+    display: none !important;
+}

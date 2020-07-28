@@ -1,0 +1,14 @@
+{
+  "name": "swizzle",
+  "version": "1.0.0",
+  "description": "Beautiful, responsive, modern music app",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "rohin",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.1.1"
+  }
+}

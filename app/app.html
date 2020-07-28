@@ -1,0 +1,119 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---==== Meta ====--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Discover | Swizzle</title>
+
+    <!---==== CSS ====-->
+    <!-- Eon Styles --><link rel="stylesheet" href="https://rohinarya12.github.io/eonstyles/new/eon.css">
+    <!-- Animate --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Material Icons --><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <!-- Balloo Font--> <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Dameonite / Bootstrap--><link rel="stylesheet" href="daemonite/material.min.css">
+    <!-- Waves --><link rel="stylesheet" href="daemonite/waves.min.css">
+    <!-- Snackbar --><link rel="stylesheet" href="daemonite/snackbar.min.css">
+
+    <!-- Swizzle CSS --> <link rel="stylesheet" href="css/swizzle.css">
+    <!-- App CSS --> <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body id="body">
+    <!-- Preflight Modals-->
+    <div class="modal fade bd-example-modal-sm" id="errorModal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-sm" role="document"><div class="modal-content"><div class="modal-header"><h3>Error</h3></div><h5 id="erorrModalMsg" class="modal-body">Unable to complete process.</h5><div class="modal-footer"><button type="button" class="waves btn-old-text" data-dismiss="modal">dismiss</button></div></div></div></div>
+    <div style="z-index: 20000049108509173268563785623467823478623478278997819871982498714;" class="modal fade bd-example-modal-sm" id="eonloaderelement" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-sm modal-dialog-centered" role="document"><div style="display: inline-block; border-radius: 400px; width: 150px" class="modal-content centered"><div class="modal-body"><center><div class="progress-circular"><div class="progress-circular-wrapper"><div class="progress-circular-inner"><div class="progress-circular-left"><div class="progress-circular-spinner"></div></div><div class="progress-circular-gap"></div><div class="progress-circular-right"><div class="progress-circular-spinner"></div></div></div></div></div></center></div></div></div></div>
+    <div style="z-index: 20000049108509173268563785623467823478623478278997819871982498714;" class="modal fade bd-example-modal-sm" id="eondoneelement" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-sm modal-dialog-centered" role="document"><div style="display: inline-block; border-radius: 400px; width: 150px" class="modal-content centered"><div class="modal-body"><center><h1 id="doneleementicon" style="line-height: 0px; margin: 0px;" class="animated bounceIn"><i class="material-icons doneicon">done</i></h1></center></div></div></div></div>
+<!-- ===========================--] Content [=================================== -->    
+
+<div id="sidebar">
+    <div class="sidebarpadding">
+        <div class="sidebarlogo animated pulse slower infinite">
+            <img class="sidebarlogo animated fadeInRight" src="assets/logo-black.png" alt="">
+        </div>
+        <h4 class="sidebarlogotext animated fadeInLeft">Swizzle</h4>
+    </div>
+    <br><br>
+    <ul class="nav tabsnav animated fadeInLeft" id="justifiedTab" role="tablist">
+        <li onclick="document.getElementById('discover-tab').click()" class="nav-item">
+            <a class="tabactive" onclick="tabe('discover')" aria-controls="discover" aria-selected="true" data-toggle="tab" href="#discover" id="discover-tab" role="tab"> <i class="material-icons">dashboard</i> Discover</a>
+        </li>
+        <li onclick="document.getElementById('browse-tab').click()" class="nav-item">
+            <a onclick="tabe('browse')" aria-controls="browse" aria-selected="false" data-toggle="tab" href="#browse" id="browse-tab" role="tab"> <i class="material-icons">explore</i> Browse</a>
+        </li>
+        <li onclick="document.getElementById('social-tab').click()" class="nav-item">
+            <a onclick="tabe('social')" aria-controls="social" aria-selected="false" data-toggle="tab" href="#social" id="social-tab" role="tab"> <i class="material-icons">sentiment_very_satisfied</i> Social</a>
+        </li>
+    </ul>
+    <ul class="nav tabsnav animated fadeInLeft" id="justifiedTab2" role="tablist">
+        <li onclick="document.getElementById('account-tab').click()" class="nav-item">
+            <a onclick="tabe('account')" aria-controls="account" aria-selected="false" data-toggle="tab" href="#account" id="account-tab" role="tab"> <i class="material-icons">account_box</i> Account</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <div class="tab-content" id="justifiedTabContent">
+        <div aria-labelledby="discover-tab" class="tab-pane fade show active" id="discover" role="tabpanel">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <ul class="navbar-nav mr-auto">
+                    <h1 class="title-tab animated fadeInUp">Discover</h1>
+                </ul>
+
+                <div class="usercard card">
+                    <div class="card-body">
+                        <img id="userpfp1" class="userpfp centeredy" alt="">
+                        <div id="username1"><b>Full Name</b><br>ok</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div aria-labelledby="browse-tab" class="tab-pane fade" id="browse" role="tabpanel">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <ul class="navbar-nav mr-auto">
+                    <h1 class="title-tab animated fadeInUp">Browse</h1>
+                </ul>
+                <!-- Right-algined content here -->
+            </nav>
+        </div>
+
+        <div aria-labelledby="social-tab" class="tab-pane fade" id="social" role="tabpanel">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <ul class="navbar-nav mr-auto">
+                    <h1 class="title-tab animated fadeInUp">Social</h1>
+                </ul>
+                <!-- Right-algined content here -->
+            </nav>
+        </div>
+
+        <div aria-labelledby="account-tab" class="tab-pane fade" id="account" role="tabpanel">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <ul class="navbar-nav mr-auto">
+                    <h1 class="title-tab animated fadeInUp">Account</h1>
+                </ul>
+                <!-- Right-algined content here -->
+            </nav>
+        </div>
+</div>
+
+<div class="shadow-sm" id="playing">
+
+</div>
+
+<!-- ===========================--] /Content [=================================== -->
+    <!---==== JavaScript ====--->
+    <!-- JQuery --><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper --><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- Bootstrap --><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <!-- Eon Styles --><script src="https://rohinarya12.github.io/eonstyles/new/eon.js"></script>
+    <!-- Daemonite --><script src="daemonite/material.min.js"></script>
+    <!-- Waves --><script src="daemonite/waves.min.js"></script><script>addWaves();function addWaves(){ Waves.attach('.eon-contained', ['waves-button', 'waves-light']);Waves.attach('.eon-outlined', ['waves-button']);Waves.attach('.eon-text', ['waves-button']);var config = {duration: 250}; Waves.init(config);}</script>
+    <!-- Snackbar --><script src="daemonite/snackbar.min.js"></script><style>.snackbar-container {padding-top: 8px !important;padding-bottom: 8px !important;border-radius: 8px !important;max-width: 8723789253786352614975678392738649502976483528059748327952px;}</style>
+
+    <!-- Tabs JS --> <script src="js/tabs.js"></script>
+    <!-- App JS --> <script src="js/app.js"></script>
+
+</body>
+</html>

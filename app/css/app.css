@@ -1,0 +1,148 @@
+.title {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 500;
+}
+
+.gradicon {
+    background-image: linear-gradient(270deg, var(--swizzle-primary), var(--swizzle-secondary));
+    padding: 6px;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.indexicon {
+    font-size: 140px;
+    padding: 24px;
+}
+
+.centeredcol {
+    text-align: center;
+    padding-top: 120px;
+}
+
+#sidebar {
+    position: absolute; 
+    left: 0px;
+    top: 0px;
+    height: calc(100% - 65px);
+    width: 250px;
+    border-right: 1px solid var(--contrast-tertiary);
+}
+
+#content {
+    position: absolute;
+    width: calc(100% - 250px);
+    left: 250px;
+    padding: 48px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+    height: calc(100% - 65px);
+}
+
+#playing {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    height: 65px;
+}
+
+.sidebarlogo {
+    width: 54px;
+    display: inline-block;
+}
+
+.sidebarlogotext {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.sidebarpadding {
+    padding: 48px 24px 0px 24px;
+}
+
+.tabsnav {
+    width: 100%;
+}
+
+.tabsnav a{
+    width: 100%;
+    padding-left: 64px;
+    position: relative;
+
+    color: var(--contrast-secondary);
+    font-size: 16px;
+    text-decoration: none !important;
+    transition: all 0.5s;
+}
+
+.nav-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 0px;
+
+    transition: all 0.2s;
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(0, 0, 0, 0.1);
+
+    transition: all 0.2s;
+}
+
+.tabsnav a:hover{
+    text-decoration: none !important;
+    color: var(--contrast-secondary);
+}
+
+.nav-item i {
+    padding-right: 8px;
+}
+
+.tabactive::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    width: 2px;
+    background-color: var(--swizzle-primary);
+}
+
+.tabactive {
+    color: var(--swizzle-primary) !important;
+    transition: all 0.5s;
+}
+
+.tabactive:hover {
+    color: var(--swizzle-primary) !important;
+}
+
+.title-tab {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.userpfp {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#username1 {
+    display: inline-block;
+    padding-left: 56px;
+}
