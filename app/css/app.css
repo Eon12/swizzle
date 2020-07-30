@@ -53,6 +53,7 @@
     width: 100%;
     background-color: var(--bg-secondary);
     height: 65px;
+    z-index: 696969;
 }
 
 .sidebarlogo {
@@ -145,4 +146,118 @@
 #username1 {
     display: inline-block;
     padding-left: 56px;
+}
+
+#unconfirmed {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+    backdrop-filter: blur(8px);
+}
+
+.centered {
+    text-align: center;
+}
+
+.andelay1 {
+    animation-delay: 0.5s;
+}
+.andelay2 {
+    animation-delay: 1.0s;
+}
+.andelay3 {
+    animation-delay: 1.5s;
+}
+.andelay4 {
+    animation-delay: 2.0s;
+}
+
+.navbar .form-control {
+    border-radius: 12px;
+}
+
+#searchsheet {
+    position: fixed;
+    background-color: var(--bg-tertiary);
+    width: calc(100% - 250px);
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 5 !important;
+    overflow-y: scroll;
+}
+
+.iconbtn {
+    min-width: 0px !important;
+    padding: 4px !important;
+    background-color: var(--bg-secondary) !important;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.50) !important;
+    transition: all 1s !important;
+    z-index: 2 !important;
+}
+
+.iconbtn:hover {
+    background-color: var(--bg-secondary) !important;
+    box-shadow: 2px 2px 20px 1px rgba(0,0,0,0.40) !important;
+    transition: all 1s !important;
+}
+
+.navbarsearch {
+    padding: 48px;
+}
+
+.navbarsearch .navbar-nav .title-tab{
+    margin-bottom: 0px;
+}   
+
+#searchResults {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 24px; 
+    text-align: center;
+    gap: 8px;
+}
+
+.searchResultDiv {
+    margin: 6px;
+    width: 95%;
+    min-height: 120px;
+    background-color: var(--bg-primary);
+    position: relative;
+}
+
+.thumbnail {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-top: -20px;
+}
+
+.imgcontainer {
+    max-width: 120px;
+    max-height: 120px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    border-radius: 12px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.cardcontent {
+    margin-left: 12px;
+    display: inline-block;
+    position: relative;
+    width: calc(100% - 132px);
+}
+
+.cardtitle {
+    width: 100%;
+}
+
+.navv {
+    padding: 0px !important;
 }

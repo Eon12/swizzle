@@ -14,7 +14,6 @@ function signin() {
     email = document.getElementById('signinemail').value
     password = document.getElementById('signinpassword').value
 
-    sessionStorage.setItem('newuser', 'true')
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
         alert(error.message)
     });      
@@ -58,6 +57,9 @@ firebase.auth().onAuthStateChanged(function(user) {
                     })
                 }
             })
+        }
+        else {
+            window.location.replace('app.html')
         }
     } else {
         // Signed out; Do nothing.

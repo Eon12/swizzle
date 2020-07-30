@@ -27,6 +27,30 @@
     <div style="z-index: 20000049108509173268563785623467823478623478278997819871982498714;" class="modal fade bd-example-modal-sm" id="eondoneelement" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-sm modal-dialog-centered" role="document"><div style="display: inline-block; border-radius: 400px; width: 150px" class="modal-content centered"><div class="modal-body"><center><h1 id="doneleementicon" style="line-height: 0px; margin: 0px;" class="animated bounceIn"><i class="material-icons doneicon">done</i></h1></center></div></div></div></div>
 <!-- ===========================--] Content [=================================== -->    
 
+<div id="unconfirmed" class="hidden animated fadeIn">
+    <div class="centered">
+        <h4>Welcome to Swizzle</h4>
+        <br><br>
+        <div class="card animated fadeInUp andelay2">
+            <div class="card-body">
+                <p><b>Complete your Profile</b></p>
+                <br>
+                <div class="floating-label textfield-box">
+                    <label for="displaynameinput">What's your name?</label>
+                    <input class="form-control" id="displaynameinput" type="text">
+                </div>
+                <br>
+                <div class="floating-label textfield-box">
+                    <label for="usernameinput">Username</label>
+                    <input class="form-control" id="usernameinput" type="text">
+                </div>
+                <br>
+                <button onclick="completeprofile()" class="eon-contained block">Complete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="sidebar">
     <div class="sidebarpadding">
         <div class="sidebarlogo animated pulse slower infinite">
@@ -64,10 +88,14 @@
                 <div class="usercard card">
                     <div class="card-body">
                         <img id="userpfp1" class="userpfp centeredy" alt="">
-                        <div id="username1"><b>Full Name</b><br>ok</div>
+                        <div id="username1"></div>
                     </div>
                 </div>
             </nav>
+
+            <br><br>
+          
+
         </div>
 
         <div aria-labelledby="browse-tab" class="tab-pane fade" id="browse" role="tabpanel">
@@ -76,7 +104,27 @@
                     <h1 class="title-tab animated fadeInUp">Browse</h1>
                 </ul>
                 <!-- Right-algined content here -->
+                <button onclick="searchsheet_on()" class="iconbtn eon-contained"><i class="material-icons gradicon">search</i></button>
             </nav>
+
+
+            <div id="searchsheet" class="hidden animated fadeInUp fast">
+                <nav class="navbar navbarsearch navbar-expand-lg navbar-dark">
+                    <ul class="navbar-nav mr-auto">
+                        <h1 class="title-tab animated fadeInUp">Search</h1>
+                    </ul>
+                    <!-- Right-algined content here -->
+                    <div class="floating-label textfield-box">
+                        <label for="searchBox">Search</label>
+                        <input class="form-control" id="searchBox" placeholder="" type="text">
+                    </div>
+                </nav>
+
+                <br><br>
+                <div id="searchResults"></div>
+
+            </div>
+
         </div>
 
         <div aria-labelledby="social-tab" class="tab-pane fade" id="social" role="tabpanel">
@@ -111,9 +159,20 @@
     <!-- Daemonite --><script src="daemonite/material.min.js"></script>
     <!-- Waves --><script src="daemonite/waves.min.js"></script><script>addWaves();function addWaves(){ Waves.attach('.eon-contained', ['waves-button', 'waves-light']);Waves.attach('.eon-outlined', ['waves-button']);Waves.attach('.eon-text', ['waves-button']);var config = {duration: 250}; Waves.init(config);}</script>
     <!-- Snackbar --><script src="daemonite/snackbar.min.js"></script><style>.snackbar-container {padding-top: 8px !important;padding-bottom: 8px !important;border-radius: 8px !important;max-width: 8723789253786352614975678392738649502976483528059748327952px;}</style>
+    <!-- Color thief --> <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
 
-    <!-- Tabs JS --> <script src="js/tabs.js"></script>
+    <!-- GAPI --> <script src="https://apis.google.com/js/api.js"></script>
+    <!-- Auth --> <script src="js/gapi.js"></script>
+
+    <!--==== Firebase ====-->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+    <!-- Firebase --> <script src="js/firebase.js"></script>
     <!-- App JS --> <script src="js/app.js"></script>
+    <!-- Browse JS --> <script src="js/browse.js"></script>
+    <!-- Tabs JS --> <script src="js/tabs.js"></script>
 
 </body>
 </html>

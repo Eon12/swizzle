@@ -48,6 +48,7 @@ function tabe(tab) {
                 // Run every time social tab is selected.
                 break;
             case "account":
+                // Run every time account tab is selected.
                 break;
         }    
     }
@@ -60,11 +61,16 @@ function tabe(tab) {
                 // Run first time discover tab is selected.
                 break;
             case "browse":
+                preflight_browse()
                 // Run first time browse tab is selected.
                 break;
             case "social":
                 // Run first time social tab is selected.
                 break;
+            case "account":
+                // Run first time social tab is selected.
+                load_account_details()
+            break;
         }
     }
 }

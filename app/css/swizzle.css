@@ -1,6 +1,10 @@
 :root {
     --swizzle-primary: #c61a65;
     --swizzle-secondary: #f7768a;
+    --swizzle-tertiary: #dd4687;
+
+    --swizzle-transparent-primary: rgb(206, 44, 114 ,0.2);
+    --swizzle-transparent-secondary: rgba(206, 44, 179, 0.1);
 
     --bg-primary: #1c1d31;
     --bg-secondary: #333446;
@@ -17,6 +21,34 @@
 
 ::placeholder, input {
     color: var(--content-primary) !important;
+}
+
+/* Buttons */
+
+.eon-contained {
+    background-color: var(--swizzle-primary) !important;
+}
+
+.eon-contained:hover {
+    background-color: var(--swizzle-tertiary) !important;
+    transition: all 0.5s;
+}
+
+.eon-outlined {
+    border-color: var(--swizzle-primary) !important;
+    color: var(--swizzle-secondary) !important;
+}
+
+.eon-outlined:hover {
+    background-color: var(--swizzle-transparent-primary) !important; 
+}
+
+.eon-text {
+    color: var(--swizzle-primary) !important;
+}
+
+.eon-text:hover {
+    background-color: var(--swizzle-transparent-primary) !important; 
 }
 
 body {
