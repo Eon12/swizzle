@@ -10,3 +10,5 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  functions = firebase.functions();
+  db = firebase.firestore()
