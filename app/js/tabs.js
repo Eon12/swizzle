@@ -1,5 +1,6 @@
 sessionStorage.setItem('first-time-discover', 'true')
 sessionStorage.setItem('first-time-browse', 'true')
+sessionStorage.setItem('first-time-library', 'true')
 sessionStorage.setItem('first-time-social', 'true')
 sessionStorage.setItem('first-time-account', 'true')
 sessionStorage.setItem('currentab', 'nothing')
@@ -47,6 +48,9 @@ function tabe(tab) {
             case "social":
                 // Run every time social tab is selected.
                 break;
+            case "library":
+                // Run every time social tab is selected.
+                break;
             case "account":
                 // Run every time account tab is selected.
                 break;
@@ -66,6 +70,10 @@ function tabe(tab) {
                 break;
             case "social":
                 // Run first time social tab is selected.
+                break;
+            case "library":
+                // Run first time library tab is selected.
+                loadPlaylists()
                 break;
             case "account":
                 // Run first time social tab is selected.

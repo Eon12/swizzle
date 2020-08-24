@@ -74,6 +74,10 @@ async function load() {
 
     load_user_card()
 
+    if (sessionStorage.getItem('waitingPlaylist') == "true") {
+        loadPlaylists()
+    }
+
 }
 
 function load_user_card() {

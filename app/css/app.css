@@ -261,3 +261,37 @@
 .navv {
     padding: 0px !important;
 }
+
+.playlist {
+    width: 185px;
+    height: 185px;
+    position: relative;
+}
+
+.playlist .playlist_text {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.playlist img {
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+}
+
+.modal-content {
+    background-color: var(--bg-primary);
+    border-radius: 24px;
+    padding: 12px;
+}
+
+#searchsheet .centeredx{
+    margin-top: 64px;
+}
+
+#justifiedTab2 {
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 12px;
+}

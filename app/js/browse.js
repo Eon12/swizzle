@@ -10,10 +10,13 @@ function preflight_browse() {
 
 function searchsheet_on() {
     $('#searchsheet').removeClass('hidden')
+    $('#searchsheet').addClass('fadeInUp')
+    $('#searchsheet').removeClass('fadeOutDown')
 }
 
 function searchsheet_off() {
-
+    $('#searchsheet').removeClass('fadeInUp')
+    $('#searchsheet').addClass('fadeOutDown')
 }
 
 function getDurations(videos) {
